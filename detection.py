@@ -83,13 +83,12 @@ def cam_data(sec):
 
         # Display the resulting image
         cv2.imshow('Video', frame)
-        print("frame 1")
 
         # Hit 'q' on the keyboard to quit!
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
-        if time.time() - start_time >= sec: #<---- Check if 5 sec passed
+        if time.time() - start_time >= sec: #<---- Check if "" sec passed
             print(" 5sec over!")
             break
 
